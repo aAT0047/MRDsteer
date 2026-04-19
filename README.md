@@ -23,10 +23,17 @@ MRDsteer addresses this limitation by combining:
 2. **Adaptive Recalibration**  
    A Double Deep Q-Network (DDQN) agent monitors degradation states and decides when to trigger localized rollback / re-calling for high-error genomic regions.
 
-Together, these components transform ctDNA variant calling from a static pipeline into a **self-driving closed-loop optimization framework**.
+Together, these components transform ctDNA variant calling from a static pipeline into a **self-driving closed-loop optimization tool**.
 
 ---
 
+
+<p align="center">
+  <img src="./image/figure1.tif" alt="MRDsteer technical roadmap" width="90%">
+</p>
+<p align="center">
+  <em>Figure 1. Technical roadmap of the MRDsteer framework.</em>
+</p>
 ## Key Features
 
 - **Quality-aware degradation tracking** from accessible QC signals
@@ -38,7 +45,7 @@ Together, these components transform ctDNA variant calling from a static pipelin
 
 ---
 
-## Framework
+## USING
 
 MRDsteer consists of two major modules:
 
