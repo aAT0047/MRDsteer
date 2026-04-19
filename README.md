@@ -27,6 +27,17 @@ Together, these components transform ctDNA variant calling from a static pipelin
 
 ---
 
+<p align="center">
+  <img src="./image/figure1.png" alt="MRDsteer technical roadmap" width="90%">
+</p>
+<p align="center">
+  <em>Figure 1. Technical roadmap of the MRDsteer .</em>
+</p>
+
+<p align="center">
+  <img src="./image/figure3.png"  width="90%">
+</p>
+<p align="center">
 
 ## Key Features
 
@@ -120,7 +131,28 @@ The dynamic modeling script expects CSV files containing at least:
 
 The script aggregates by `sample_id` and `row`, and defines:
 
-- `X = 1 - recall`
+## Latent Degradation Modeling
+
+### Latent State
+
+We define degradation as:
+
+$x_k = 1 - \frac{\sum_{i=1}^{k} TP_i}{\sum_{i=1}^{k} (TP_i + FN_i)}$
+
+
+
+### Observation
+
+$\Delta y_i = W^T [FR_i, \Delta TiTv_i, SB_i, BER_i]$
+
+$y_k = \sum_{i=1}^{k} \Delta y_i$
+
+
+### Relationship
+
+$y_k = x_k + \epsilon_k$
+
+
 
 ### B. Adaptive Recalibration Module input
 
@@ -229,11 +261,23 @@ According to the manuscript, MRDsteer achieved strong performance under analytic
 
 under ultra-low variant allele frequency conditions (**0.1%–0.5% VAF**) with **10 ng DNA input**.
 
+<p align="center">
+  <img src="./image/figure5.png"  width="90%">
+</p>
+<p align="center">
+
 The manuscript also reports improved progression-free survival stratification in clinical cohorts:
 
 - **K438:** HR = 2.63, log-rank *P* = 0.003
 - **KA7P:** HR = 2.41, log-rank *P* = 0.012
-
+<p align="center">
+  <img src="./image/figure7.png" width="90%">
+</p>
+<p align="center">
+   <p align="center">
+  <img src="./image/figure9.png"  width="90%">
+</p>
+<p align="center">
 ---
 
 ## Notes
@@ -261,15 +305,7 @@ If you use this repository in your research, please cite:
 
 ---
 
-## License
 
-Please add your preferred open-source license here, for example:
-
-- MIT License
-- Apache-2.0
-- GPL-3.0
-
----
 
 ## Contact
 
