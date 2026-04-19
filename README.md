@@ -28,12 +28,6 @@ Together, these components transform ctDNA variant calling from a static pipelin
 ---
 
 
-<p align="center">
-  <img src="./image/figure1.tif" alt="MRDsteer technical roadmap" width="90%">
-</p>
-<p align="center">
-  <em>Figure 1. Technical roadmap of the MRDsteer framework.</em>
-</p>
 ## Key Features
 
 - **Quality-aware degradation tracking** from accessible QC signals
