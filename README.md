@@ -1,5 +1,4 @@
 # MRDsteer
-# MRDsteer
 
 **MRDsteer: quality-aware AI-driven closed-loop optimization enhances ctDNA-based minimal residual disease detection**
 
