@@ -171,6 +171,10 @@ where:
 - `rul` represents the remaining reliable processing span
 
 > If you want to run the full workflow end-to-end on your own data, make sure your preprocessing step converts outputs from the degradation module into the input format required by the DDQN module.
+## Parameter Optimization via MRDagent
+
+MRDsteer integrates **[MRDagent](https://github.com/aAT0047/MRDagent)** for adaptive parameter optimization during variant calling.  
+MRDagent employs a self-adaptive optimization framework with learning-based strategies to dynamically adjust parameters based on real-time feedback, improving robustness under heterogeneous ctDNA conditions :contentReference[oaicite:0]{index=0}.  
 
 <p align="center">
   <img src="./image/figure4.png"  width="90%">
