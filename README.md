@@ -152,7 +152,10 @@ $y_k = \sum_{i=1}^{k} \Delta y_i$
 
 $y_k = x_k + \epsilon_k$
 
-
+<p align="center">
+  <img src="./image/figure2.png"  width="90%">
+</p>
+<p align="center">
 
 ### B. Adaptive Recalibration Module input
 
@@ -169,6 +172,10 @@ where:
 
 > If you want to run the full workflow end-to-end on your own data, make sure your preprocessing step converts outputs from the degradation module into the input format required by the DDQN module.
 
+<p align="center">
+  <img src="./image/figure4.png"  width="90%">
+</p>
+<p align="center">
 ---
 
 ## Usage
