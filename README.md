@@ -2,8 +2,8 @@
 
 **MRDsteer: quality-aware AI-driven closed-loop optimization enhances ctDNA-based minimal residual disease detection**
 
-MRDsteer is an AI-driven closed-loop framework for adaptive ctDNA variant calling in minimal residual disease (MRD) analysis.  
-It models latent performance degradation from multi-dimensional quality signals, predicts the remaining reliable processing span, and triggers localized recalibration before variant-calling failure occurs.
+Abstract
+Accurate identification of ultra-low-frequency tumor-derived variants is critical for circulating tumor DNA (ctDNA)-based minimal residual disease (MRD) profiling. However, current ctDNA analysis workflows largely operate as predefined, sequential pipelines without explicit mechanisms for continuous monitoring of variant-calling performance or adaptive control, thereby limiting detection stability in genomically heterogeneous regions.To address this limitation, we developed MRDsteer, an autonomous closed-loop agent driven by AI. MRDsteer first represents variant-calling efficacy as a latent state inferred from multidimensional quality metrics, such as filtration ratio and strand bias, and models its progressive degradation using a non-linear Wiener process combined with Kalman filtering to dynamically estimate the remaining reliable processing span. It then employs a Double Deep Q-Network (DDQN) agent to continuously monitor the degradation trajectory, identify the optimal intervention point, and trigger localized re-calling of high-error regions before performance failure occurs. Comparative analyses demonstrated that MRDsteer achieved adaptive and optimized variant-calling performance in both simulated and real-world datasets. Under analytically challenging conditions, including ultra-low variant allele frequencies (0.1%–0.5%) and limited DNA input (10 ng), MRDsteer achieved an AUPRG of 0.76 and an F1-minor score of 0.86, outperforming representative baseline methods. In clinical cohorts, MRDsteer also improved progression-free survival stratification for ctDNA-based MRD profiling in both K438 (HR = 2.63, log-rank P = 0.003) and KA7P (HR = 2.41, log-rank P = 0.012)
 
 ---
 
@@ -34,10 +34,6 @@ Together, these components transform ctDNA variant calling from a static pipelin
   <em>Figure 1. Technical roadmap of the MRDsteer .</em>
 </p>
 
-<p align="center">
-  <img src="./image/figure3.png"  width="90%">
-</p>
-<p align="center">
 
 ## Key Features
 
@@ -153,9 +149,10 @@ $y_k = \sum_{i=1}^{k} \Delta y_i$
 $y_k = x_k + \epsilon_k$
 
 <p align="center">
-  <img src="./image/figure2.png"  width="90%">
+  <img src="./image/figure3.png"  width="90%">
 </p>
 <p align="center">
+
 
 ### B. Adaptive Recalibration Module input
 
