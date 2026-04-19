@@ -216,7 +216,7 @@ python "Adaptive Recalibration Module.py" \
   <img src="./image/figure4.png"  width="90%">
 </p>
 <p align="center">
----
+
 #### Main outputs
 
 The script saves model and visualization files under the output directory, including:
