@@ -301,11 +301,15 @@ The manuscript also reports improved progression-free survival stratification in
 If you use this repository in your research, please cite:
 
 ```bibtex
-@article{mrdsteer2026,
+@article{wang2026mrdsteer,
   title={MRDsteer: quality-aware AI-driven closed-loop optimization enhances ctDNA-based minimal residual disease detection},
-  author={...},
-  journal={...},
-  year={2026}
+  author={Wang, Tianci and Lai, Xin and Wang, Shenjie and Liu, Yuqian and Zhang, Shuqun and Wang, Jiayin},
+  journal={Briefings in Bioinformatics},
+  volume={27},
+  number={4},
+  pages={bbag372},
+  year={2026},
+  publisher={Oxford University Press}
 }
 ```
 
